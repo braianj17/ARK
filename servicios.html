@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/ico" href="imagenes/icof.ico">
+	<title>ARK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+    line-height: 100%;
+  }
+  h2{
+    color: white;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 50px 70px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  #espacio{
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+  }
+  
+  #coti
+  {
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    color: #5ac576;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #7897ab;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+  }
+  .navbar li a, .navbar .navbar-brand { /*color letras navbar*/
+    color: #fff !important; 
+  }
+  .navbar-nav li a:hover { /*Cuando se seleciona un boton color*/
+    background-color: #5ac576 !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #5ac576 !important; /*color del boton clic*/
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+    .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #d1ecdd;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  </style>
+</head>
+<body id="inicio" data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="container" id="espacio">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">
+         <img src="imagenes/logo-barra-menu.png" class="img-responsive" width="80px" >
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="barra">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="/">INICIO</a></li>
+        <li><a href="#inicio">SERVICIOS</a></li>
+        <li><a href="proyectos">PROYECTOS</a></li>
+        <li><a href="quienes">¿QUIENES SOMOS?</a></li>
+        <li><a href="contacto">CONTACTO</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+<a href="https://api.whatsapp.com/send?phone=5212228712876&text=Quiero%20mas%20informaion">
+                                       <img src="imagenes/w.png" width="55px" >
+                                       
+
+</a>
+</li>
+        <li><a href="contacto">
+        <img src="imagenes/f.png" width="55px" >
+        </a></li>
+        <li><a href="" data-toggle="modal" data-target="#myModal">
+        <img src="imagenes/boton-cotizate.png" width="55px" >
+        </a></li>
+        <li><a href="formulario" data-toggle="modal" data-target="#myModal2">
+        <img src="imagenes/boton-crea.png" width="55px" >
+        </a></li>
+      </ul>
+    </div>
+  </div> <!--barra nav-->
+</nav>
+</div>
+<br><br>
+<div class="row"> <!--paquetes-->
+  <div class="col-sm-6"> <!--primerizo-->
+    <img src="imagenes/m1.png" class="img-responsive" align="right">
+  </div>
+  <div class="col-sm-6" >
+    <img src="imagenes/m2.png" class="img-responsive" align="left">
+  </div>
+  </div>
+  <br><br>
+  <div class="row" align="right"> <!--basico-->
+	
+  <div class="col-sm-6">
+    <img src="imagenes/m3.png" class="img-responsive" align="right">
+
+  </div>
+  <div class="col-sm-6">
+    <img src="imagenes/m4.png" class="img-responsive" align="left">
+  </div>
+</div>
+<div class="row"> <!--paquetes 2 -->
+  <div class="col-sm-6"> <!--web-->
+    <img src="imagenes/m5.png" class="img-responsive" align="right">
+  </div>
+  <div class="col-sm-6" >
+    <img src="imagenes/m6.png" class="img-responsive" align="left">
+  </div>
+  </div>
+  <br><br>
+  <div class="row" align="right"> <!--completo-->
+  
+  <div class="col-sm-6">
+    <img src="imagenes/m7.png" class="img-responsive" align="right">
+
+  </div>
+  <div class="col-sm-6">
+    <img src="imagenes/m8.png" class="img-responsive" align="left">
+  </div>
+</div>
+<div>
+	<br><br>
+  <center><img src="imagenes/serv-extra.png" class="img-responsive"></center>
+  <br><br><!--titulo de extras-->
+</div>
+<div class="row"><!--extras -->
+  <div class="col-sm-6 person" data-toggle="collapse" data-target="#info1">
+    <center>
+  	<p class="text-success"><img src="imagenes/agendavi.png" class="img-responsive"></p>
+  	
+  	<div id="info1" class="collapse">
+      <img src="imagenes/agendavid.png" class="img-responsive">
+  	</div>
+    </center>
+  </div>
+  <div class="col-sm-6 person" data-toggle="collapse" data-target="#info2">
+    <center>
+  	<p class="text-success"><img src="imagenes/tiendavir.png" class="img-responsive"></p>
+  
+    <div id="info2" class="collapse">
+  	   <img src="imagenes/tiendavird.png" class="img-responsive">
+  	   </div>
+    </center>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 person" data-toggle="collapse" data-target="#info3">
+    <center>
+  	<p class="text-success"><img src="imagenes/sitioweb.png" class="img-responsive"></p>
+  
+    <div id="info3" class="collapse">
+      <img src="imagenes/sitiowebd.png" class="img-responsive">
+  	</div>
+    </center>
+  </div>
+  <div class="col-sm-6 person" data-toggle="collapse" data-target="#info4">
+    <center>
+  	<p class="text-success"><img src="imagenes/cambioimg.png" class="img-responsive"></p>
+  
+    <div id="info4" class="collapse">
+  	   <img src="imagenes/cambioimgd.png" class="img-responsive">
+  	</div>
+    </center>
+  </div>
+</div>
+  <div align="center"><!--info-->
+  <img src="imagenes/infoimportante.png" class="img-responsive">
+  </div>
+  <div align="center"><!--pagos-->
+  <img src="imagenes/cotizacion-especial.png" class="img-responsive">
+  </div>
+  <div class="row">
+  <div class="col-sm-6" align="center">
+    <img src="imagenes/uniario.png" class="img-responsive">
+  </div>
+  <div class="col-sm-6" align="center">
+    <img src="imagenes/anual.png" class="img-responsive">
+  </div>
+</div>
+
+<div > <!--cotizar-->
+  <br><br>
+  <div align="center">
+        <div align="center" id="coti">
+          <p><strong>Cotizá tu mensualidad</strong></p>
+          <img src="imagenes/estra.jpg" class="img-responsive" width="400" height="300">
+        </div>
+        <br>
+        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">Cotizar</button>
+      </div>
+</div>
+
+<!-- Modal: menu emergente para cotizar -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div id="pricing" class="container-fluid">
+      <div align="center"> <!--texto titulo-->
+        <img src="imagenes/cotizacion.png" class="img-responsive">
+        <p id="titu">Si tienes dudas revisa nuestra sección de "servicios" o contacta con nosotros en la sección "contacto"<p>
+        <br>
+      </div>
+      <div class="row"><!--contenido-->
+        <div class="col-sm-3 col-xs-12"><!--basico-->
+          <div class="panel panel-default text-center">
+          <div class="panel-heading" align="center">
+              <img src="imagenes/pa1.png" class="img-responsive" width="20%" >
+          </div>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+             Paquete Primerizo</a>
+            </h5>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Imagen en Facebook</li>
+                <li class="list-group-item">Página web: 4 secciones</li>
+                <li class="list-group-item">Diseño de página web: Básico</li>
+                <li class="list-group-item">Terminación xyz</li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+            Agregar servicios extra</a>
+            </h5>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul class="list-group">
+                <button onclick="agen1(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Agenda</button>
+                <button onclick="tienda1(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Virtual</button>
+                <button onclick="online1(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Online</button>
+                <button onclick="cambio1(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Cambio de imagen</button>
+              </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> ¿Cuántos meses?</label>
+              </div>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="meses" placeholder="cuantos meses?" value="1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label ><span class="glyphicon glyphicon-ok"></span> Cotización</label>
+              </div>
+              <br>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="coti1" placeholder="valor de la cotizacion">
+              </div>
+            </div>
+          <br>
+          <button onclick="cotizar1()" class="btn btn-success btn-lg">Cotizar</button>
+          </div>
+          </div>      
+        </div>
+        <div class="col-sm-3 col-xs-12"><!--basico-->
+          <div class="panel panel-default text-center">
+          <div class="panel-heading" align="center">
+              <img src="imagenes/pa2.png" class="img-responsive" width="20%" >
+          </div>
+          <div class="panel-group" id="accordion2">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+             Paquete Básico</a>
+            </h5>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Imagen en Facebook</li>
+                <li class="list-group-item">Página web: 4 secciones</li>
+                <li class="list-group-item">Diseño de página web: Básico</li>
+                <li class="list-group-item">Terminación .com o com.mx</li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+            Agregar servicios extra</a>
+            </h5>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul class="list-group">
+                <button onclick="agen2(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Agenda</button>
+                <button onclick="tienda2(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Virtual</button>
+                <button onclick="online2(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Online</button>
+                <button onclick="cambio2(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Cambio de imagen</button>
+              </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> ¿Cuántos meses?</label>
+              </div>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="meses2" placeholder="cuantos meses?" value="1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label ><span class="glyphicon glyphicon-ok"></span> Cotización</label>
+              </div>
+              <br>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="coti2" placeholder="valor de la cotizacion">
+              </div>
+            </div>
+          <br>
+          <button onclick="cotizar2()" class="btn btn-success btn-lg">Cotizar</button>
+          </div>
+          </div>      
+        </div>  
+        <div class="col-sm-3 col-xs-12"><!--basico-->
+          <div class="panel panel-default text-center">
+          <div class="panel-heading" align="center">
+              <img src="imagenes/pa3.png" class="img-responsive" width="20%" >
+          </div>
+          <div class="panel-group" id="accordion3">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion3" href="#collapse5">
+             Paquete Web</a>
+            </h5>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Imagen en Facebook</li>
+                <li class="list-group-item">Página web: 5 secciones</li>
+                <li class="list-group-item">Diseño de página web: dedicado</li>
+                <li class="list-group-item">Manejo de redes Sociales: 1 evento</li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion3" href="#collapse6">
+            Agregar servicios extra</a>
+            </h5>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul class="list-group">
+                <button onclick="agen3(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Agenda</button>
+                <button onclick="tienda3(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Virtual</button>
+                <button onclick="online3(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Online</button>
+                <button onclick="cambio3(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Cambio de imagen</button>
+              </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> ¿Cuántos meses?</label>
+              </div>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="meses3" placeholder="cuantos meses?" value="1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label ><span class="glyphicon glyphicon-ok"></span> Cotización</label>
+              </div>
+              <br>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="coti3" placeholder="valor de la cotizacion">
+              </div>
+            </div>
+          <br>
+          <button onclick="cotizar3()" class="btn btn-success btn-lg">Cotizar</button>
+          </div>
+          </div>      
+        </div>     
+        <div class="col-sm-3 col-xs-12">  <!--completo-->
+          <div class="panel panel-default text-center">
+          <div class="panel-heading" align="center">
+              <img src="imagenes/pa4.png" class="img-responsive" width="20%" >
+          </div>
+          <div class="panel-group" id="accordion4">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion4" href="#collapse7">
+             Paquete Completo</a>
+            </h5>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Imagen en Facebook</li>
+                <li class="list-group-item">Página web: 7 secciones</li>
+                <li class="list-group-item">Diseño de página web: Completo</li>
+                <li class="list-group-item">Manejo de redes Sociales: 2 eventos</li>
+                <li class="list-group-item">Google Maps:Ubicacion en google maps</li>
+              </ul>
+            </div>
+            </div>
+            </div>
+            <div class="panel panel-default">
+            <div class="panel-heading">
+            <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion4" href="#collapse8">
+            Agregar servicios extra</a>
+            </h5>
+            </div>
+            <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul class="list-group">
+                <button onclick="agen4(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Agenda</button>
+                <button onclick="tienda4(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Virtual</button>
+                <button onclick="online4(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Tienda Online</button>
+                <button onclick="cambio4(this)" class="btn btn-default btn-md" ><span class="glyphicon glyphicon-plus"></span> Cambio de imagen</button>
+              </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+         <div class="panel-footer">
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> ¿Cuántos meses?</label>
+              </div>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="meses4" placeholder="cuantos meses?" value="1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <br><label ><span class="glyphicon glyphicon-ok"></span> Cotización</label>
+              </div>
+              <br>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="coti4" placeholder="valor de la cotizacion">
+              </div>
+            </div>
+          <br>
+          <button onclick="cotizar4()" class="btn btn-success btn-lg">Cotizar</button>
+          </div>
+          </div>  
+        </div>   
+      </div>
+  </div>
+    <div align="center"><!--boton cancelar-->
+        <button type="submit" class="btn btn-danger btn-lg" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cerrar
+        </button>
+    </div>
+</div>
+
+
+<!--modall 2-->
+<div class="modal fade" id="myModal2" role="dialog">
+  <div id="pricing" class="container-fluid">
+      <div align="center"> <!--texto titulo-->
+        <img src="imagenes/boton-crea.png" class="img-responsive" >
+      </div>
+      <div class="row"><!--contenido-->
+          <div class="col-sm-2 col-xs-12">
+            <!--espacio-->
+          </div>
+          <div class="col-sm-2 col-xs-12">
+            <!--espacio-->
+          </div>
+          <div class="col-sm-4 col-xs-12" align="center"><!--registro-->
+            <div class="panel panel-default text-center">
+              <div class="panel-heading" align="center">
+                  <img src="imagenes/logooriginal-02.png" class="img-responsive" width="350px" >
+              </div>
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <p id="is">
+                        <a data-toggle="collapse5" data-parent="#accordion" href="#collapse5">Registro</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-group">
+                  <form action="conex.php" method="POST">
+                  <div class="panel-footer" align="center">
+                    <div class="row container-fluid" align="center">
+                      <p id="cuerp">
+                        Registrate con nosotros para poder acceder al formluario de "Creacion de página web"</p>
+                      <p id="resalto">"Creación de página web"</p>
+                      
+                      <div class="col-xs-">
+                         <input class="form-input" id="email" name="nombre" placeholder="Nombre"  required>
+                      </div>
+                      <br>
+                      <div class="col-xs-">
+                        <input class="form-input" id="email" name="apellido" placeholder="Apellido" required>
+                      </div>
+                      <br>
+                      <div class="col-xs-">
+                        <input class="form-input" id="email" name="email" placeholder="Email" type="email" required >
+                      </div>
+                      <br>
+                      <center><button class="btn btn-success" type="submit" >Enviar</button></center>
+                    </div>
+                 </div>
+              </div>      
+            </div>
+            <div align="center"><!--boton cancelar-->
+              <button type="submit" class="btn btn-danger btn-lg" data-dismiss="modal">
+              <span class="glyphicon glyphicon-remove"></span> Cerrar
+              </button>
+             </div>
+          </div>  
+          <div class="col-sm-3 col-xs-12">
+            <!--espacio-->
+          </div>
+      </div>
+  </div>
+</div>
+<script>
+  // cotizar paquete 1
+  var w = 0;
+  var x = 0;
+  var y = 0;
+  var z = 0;
+  var costo = 150;
+  var w2 = 0;
+  var x2 = 0;
+  var y2 = 0;
+  var z2 = 0;
+  var costo2 = 250;
+  var w3 = 0;
+  var x3 = 0;
+  var y3 = 0;
+  var z3 = 0;
+  var costo3 = 400;
+  var w4 = 0;
+  var x4 = 0;
+  var y4 = 0;
+  var z4 = 0;
+  var costo4 = 600;
+
+    function agen1(obj) { // boton agenda
+    if (w == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      w = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      w = 0;
+    }
+    }
+    function tienda1(obj) { // boton tienda
+    if (x == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      x = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      x = 0;
+    }
+    }
+    function online1(obj) { // boton tienda online
+    if (y == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      y = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      y = 0;
+    }
+    }
+    function cambio1(obj) { // boton cambio
+    if (z == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      z = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      z = 0;
+    }
+    }
+    function cotizar1()
+    {
+
+    var mes = document.getElementById("meses").value;
+    if (w == 1){ costo = costo + 500;}
+      if (x == 1){ costo = costo + 250;}
+        if (y == 1){ costo = costo + 500;}
+          if (z == 1){ costo = costo + 4000;}
+    var r = mes * costo;
+    document.getElementById('coti1').value = r;
+    }
+
+
+    function agen2(obj) { // boton agenda
+    if (w2 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      w2 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      w2 = 0;
+    }
+    }
+    function tienda2(obj) { // boton tienda
+    if (x2 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      x2 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      x2 = 0;
+    }
+    }
+    function online2(obj) { // boton tienda online
+    if (y2 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      y2 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      y2 = 0;
+    }
+    }
+    function cambio2(obj) { // boton cambio
+    if (z2 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      z2 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      z2 = 0;
+    }
+    }
+    function cotizar2()
+    {
+
+    var mes2 = document.getElementById("meses2").value;
+    if (w2 == 1){ costo2 = costo2 + 500;}
+      if (x2 == 1){ costo2 = costo2 + 250;}
+        if (y2 == 1){ costo2 = costo2 + 500;}
+          if (z2 == 1){ costo2 = costo2 + 4000;}
+    var r2 = mes2 * costo2;
+    document.getElementById('coti2').value = r2;
+    }
+
+
+    function agen3(obj) { // boton agenda
+    if (w3 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      w3 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      w3 = 0;
+    }
+    }
+    function tienda3(obj) { // boton tienda
+    if (x3 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      x3 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      x3 = 0;
+    }
+    }
+    function online3(obj) { // boton tienda online
+    if (y3 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      y3 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      y3 = 0;
+    }
+    }
+    function cambio3(obj) { // boton cambio
+    if (z3== 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      z3 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      z3= 0;
+    }
+    }
+    function cotizar3()
+    {
+
+    var mes3 = document.getElementById("meses3").value;
+    if (w3 == 1){ costo3 = costo3 + 500;}
+      if (x3 == 1){ costo3 = costo3 + 250;}
+        if (y3== 1){ costo3 = costo3 + 500;}
+          if (z3 == 1){ costo3 = costo3 + 4000;}
+    var r3 = mes3 * costo3;
+    document.getElementById('coti3').value = r3;
+    }
+
+
+    function agen4(obj) { // boton agenda
+    if (w4 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      w4 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      w4 = 0;
+    }
+    }
+    function tienda4(obj) { // boton tienda
+    if (x4 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      x4 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      x4 = 0;
+    }
+    }
+    function online4(obj) { // boton tienda online
+    if (y4 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      y4 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      y4 = 0;
+    }
+    }
+    function cambio4(obj) { // boton cambio
+    if (z4 == 0) 
+    {
+      obj.style.backgroundColor = "#5ac576";
+      z4 = 1;
+    }
+    else
+    {
+      obj.style.backgroundColor = "#fff"
+      z4 = 0;
+    }
+    }function cotizar4()
+    {
+
+    var mes4 = document.getElementById("meses4").value;
+    if (w4 == 1){ costo4 = costo4 + 500;}
+      if (x4 == 1){ costo4 = costo4 + 250;}
+        if (y4 == 1){ costo4= costo4 + 500;}
+          if (z4 == 1){ costo4= costo4 + 4000;}
+    var r4 = mes4 * costo4;
+    document.getElementById('coti4').value = r4;
+    }
+  // termina cotizar
+
+  $(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  $(".navbar a,footer a[href='#inicio']").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+</body>
+<br><br><br>
+<footer class="text-center">
+  <a class="up-arrow" href="#inicio" data-toggle="tooltip" title="arriba">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Volver al inicio</p>
+  <br><br>
+</footer>
+</html>
